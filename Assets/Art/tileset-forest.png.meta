@@ -1,0 +1,1258 @@
+fileFormatVersion: 2
+guid: f1fef408e5d5f43099afb730a42d526a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5270488339298475092
+    second: tileset-forest_0
+  - first:
+      213: 298374372312175878
+    second: tileset-forest_1
+  - first:
+      213: 550257250677369694
+    second: tileset-forest_2
+  - first:
+      213: 2417445143475185263
+    second: tileset-forest_3
+  - first:
+      213: 8539820693212578608
+    second: tileset-forest_4
+  - first:
+      213: -2064552948608622207
+    second: tileset-forest_5
+  - first:
+      213: 4480366411545257549
+    second: tileset-forest_6
+  - first:
+      213: -4998127345706387502
+    second: tileset-forest_7
+  - first:
+      213: 5123351469297804856
+    second: tileset-forest_8
+  - first:
+      213: -6973878068971998884
+    second: tileset-forest_9
+  - first:
+      213: 7444455895548938935
+    second: tileset-forest_10
+  - first:
+      213: -6109209481361526566
+    second: tileset-forest_11
+  - first:
+      213: -1835059460325660524
+    second: tileset-forest_12
+  - first:
+      213: 7056247865255354865
+    second: tileset-forest_13
+  - first:
+      213: -2739240625959393015
+    second: tileset-forest_14
+  - first:
+      213: 895251779860519115
+    second: tileset-forest_15
+  - first:
+      213: 186437000720078090
+    second: tileset-forest_16
+  - first:
+      213: 1860068259389001309
+    second: tileset-forest_17
+  - first:
+      213: -2701408068078164598
+    second: tileset-forest_18
+  - first:
+      213: -8592126249448153230
+    second: tileset-forest_19
+  - first:
+      213: 3696169711584711212
+    second: tileset-forest_20
+  - first:
+      213: -8964771788850497378
+    second: tileset-forest_0
+  - first:
+      213: -7873317737792948412
+    second: tileset-forest_1
+  - first:
+      213: 4711543892331494133
+    second: tileset-forest_2
+  - first:
+      213: 4231916977581841243
+    second: tileset-forest_3
+  - first:
+      213: -7799304150157027816
+    second: tileset-forest_4
+  - first:
+      213: 3911595360351777375
+    second: tileset-forest_5
+  - first:
+      213: 9121100813664747495
+    second: tileset-forest_6
+  - first:
+      213: 1276728557116835680
+    second: tileset-forest_7
+  - first:
+      213: 4301740401850072043
+    second: tileset-forest_8
+  - first:
+      213: 1214678416003647341
+    second: tileset-forest_9
+  - first:
+      213: 5058757410320693435
+    second: tileset-forest_10
+  - first:
+      213: 5702939608608927739
+    second: tileset-forest_11
+  - first:
+      213: -4647933644823009573
+    second: tileset-forest_12
+  - first:
+      213: 5944339885680849940
+    second: tileset-forest_13
+  - first:
+      213: -4817333948981960952
+    second: tileset-forest_14
+  - first:
+      213: 3802621980658430552
+    second: tileset-forest_15
+  - first:
+      213: 5103886138554661668
+    second: tileset-forest_16
+  - first:
+      213: 4425365913438766573
+    second: tileset-forest_17
+  - first:
+      213: 2970777479504380106
+    second: tileset-forest_18
+  - first:
+      213: -8565375111335658677
+    second: tileset-forest_19
+  - first:
+      213: -563605440108334466
+    second: tileset-forest_20
+  - first:
+      213: -3320448357487846679
+    second: tileset-forest_21
+  - first:
+      213: 6598543798051431335
+    second: tileset-forest_22
+  - first:
+      213: -2565405438268006531
+    second: tileset-forest_23
+  - first:
+      213: -5552243428125472014
+    second: tileset-forest_24
+  - first:
+      213: -8375880705799759525
+    second: tileset-forest_25
+  - first:
+      213: -2466441519514945320
+    second: tileset-forest_26
+  - first:
+      213: 920755797818973229
+    second: tileset-forest_27
+  - first:
+      213: 4115658424730535836
+    second: tileset-forest_28
+  - first:
+      213: 9071575029335306704
+    second: tileset-forest_29
+  - first:
+      213: -261650555801038089
+    second: tileset-forest_30
+  - first:
+      213: 500711530160876832
+    second: tileset-forest_31
+  - first:
+      213: 8090586715937947599
+    second: tileset-forest_32
+  - first:
+      213: 8650892957441687963
+    second: tileset-forest_33
+  - first:
+      213: -3137994917200987867
+    second: tileset-forest_34
+  - first:
+      213: 6993020172382840274
+    second: tileset-forest_35
+  - first:
+      213: -7645593542198854286
+    second: tileset-forest_36
+  - first:
+      213: -5840815103065586750
+    second: tileset-forest_37
+  - first:
+      213: -4803068339144198445
+    second: tileset-forest_38
+  - first:
+      213: -8629246885494384503
+    second: tileset-forest_39
+  - first:
+      213: -4081540997495941118
+    second: tileset-forest_40
+  - first:
+      213: 7960310231286626294
+    second: tileset-forest_41
+  - first:
+      213: 7270917843510061727
+    second: tileset-forest_42
+  - first:
+      213: 4080465229945721731
+    second: tileset-forest_43
+  - first:
+      213: -6052298814420898537
+    second: tileset-forest_44
+  - first:
+      213: -2871375056239340182
+    second: tileset-forest_45
+  - first:
+      213: 6564332115572305225
+    second: tileset-forest_46
+  - first:
+      213: -6294613682909362120
+    second: tileset-forest_47
+  - first:
+      213: -408942444938403315
+    second: tileset-forest_48
+  - first:
+      213: 5047094112888000496
+    second: tileset-forest_49
+  - first:
+      213: -4427573725746280325
+    second: tileset-forest_50
+  - first:
+      213: 1714516501399241895
+    second: tileset-forest_51
+  - first:
+      213: -7848375378196498934
+    second: tileset-forest_52
+  - first:
+      213: 5947103924015169409
+    second: tileset-forest_53
+  - first:
+      213: 5744327374654175798
+    second: tileset-forest_54
+  - first:
+      213: 2808482671704038681
+    second: tileset-forest_55
+  - first:
+      213: 1714381444679915516
+    second: tileset-forest_56
+  - first:
+      213: 1703130759487912631
+    second: tileset-forest_57
+  - first:
+      213: -4166828552058113903
+    second: tileset-forest_58
+  - first:
+      213: 4869973919696701097
+    second: tileset-forest_59
+  - first:
+      213: 7896756082379441562
+    second: tileset-forest_60
+  - first:
+      213: 3357687453691147464
+    second: tileset-forest_61
+  - first:
+      213: 6763505933402790846
+    second: tileset-forest_62
+  - first:
+      213: -2740286577617761505
+    second: tileset-forest_63
+  - first:
+      213: -4020217802735708866
+    second: tileset-forest_64
+  - first:
+      213: 5312558377481082718
+    second: tileset-forest_65
+  - first:
+      213: 8587175040240008426
+    second: tileset-forest_66
+  - first:
+      213: -4112725436555429125
+    second: tileset-forest_67
+  - first:
+      213: -4042977982889976088
+    second: tileset-forest_68
+  - first:
+      213: -7368413198707157863
+    second: tileset-forest_69
+  - first:
+      213: -5559243493657142093
+    second: tileset-forest_70
+  - first:
+      213: 3171525087692104942
+    second: tileset-forest_71
+  - first:
+      213: 4317978879970874847
+    second: tileset-forest_72
+  - first:
+      213: 2469227058866579587
+    second: tileset-forest_73
+  - first:
+      213: -3063926853432123667
+    second: tileset-forest_74
+  - first:
+      213: 6293449776017513616
+    second: tileset-forest_75
+  - first:
+      213: 3643746667680173345
+    second: tileset-forest_76
+  - first:
+      213: 5380498881375834853
+    second: tileset-forest_77
+  - first:
+      213: 4455618079679225329
+    second: tileset-forest_78
+  - first:
+      213: -1686163910031427225
+    second: tileset-forest_79
+  - first:
+      213: -4878479217027801455
+    second: tileset-forest_80
+  - first:
+      213: 5284448526415589785
+    second: tileset-forest_81
+  - first:
+      213: 1776598379117294385
+    second: tileset-forest_82
+  - first:
+      213: -9122576912839840190
+    second: tileset-forest_83
+  - first:
+      213: -977047486544148569
+    second: tileset-forest_84
+  - first:
+      213: 1106722737502792928
+    second: tileset-forest_85
+  - first:
+      213: 6288423500149910123
+    second: tileset-forest_86
+  - first:
+      213: 4943936858632840557
+    second: tileset-forest_87
+  - first:
+      213: -778061411972648174
+    second: tileset-forest_88
+  - first:
+      213: -3636853586677511766
+    second: tileset-forest_89
+  - first:
+      213: 1118535982453046156
+    second: tileset-forest_90
+  - first:
+      213: 4685478867516472611
+    second: tileset-forest_91
+  - first:
+      213: -6460804753874368645
+    second: tileset-forest_92
+  - first:
+      213: -5893306388412459427
+    second: tileset-forest_93
+  - first:
+      213: 8210463152387596177
+    second: tileset-forest_94
+  - first:
+      213: -82817564140314961
+    second: tileset-forest_95
+  - first:
+      213: 2824506418253069785
+    second: tileset-forest_96
+  - first:
+      213: 8267620614217848427
+    second: tileset-forest_97
+  - first:
+      213: -642344370122925447
+    second: tileset-forest_98
+  - first:
+      213: 7002731157511285777
+    second: tileset-forest_99
+  - first:
+      213: -4748013657748442779
+    second: tileset-forest_100
+  - first:
+      213: 3009347958192551548
+    second: tileset-forest_101
+  - first:
+      213: -1817418695782551311
+    second: tileset-forest_102
+  - first:
+      213: 8992057206566250365
+    second: tileset-forest_103
+  - first:
+      213: -200173945383309964
+    second: tileset-forest_104
+  - first:
+      213: -507267219590972238
+    second: tileset-forest_105
+  - first:
+      213: 3167207620748613823
+    second: tileset-forest_106
+  - first:
+      213: 4936763001608965940
+    second: tileset-forest_107
+  - first:
+      213: 4015052653839851504
+    second: tileset-forest_108
+  - first:
+      213: -6447070785914568640
+    second: tileset-forest_109
+  - first:
+      213: 1208150083208845379
+    second: tileset-forest_110
+  - first:
+      213: 4881331424590130101
+    second: tileset-forest_111
+  - first:
+      213: -2132024424084234280
+    second: tileset-forest_112
+  - first:
+      213: 740046457258569481
+    second: tileset-forest_113
+  - first:
+      213: 6167974950046496754
+    second: tileset-forest_114
+  - first:
+      213: 8211414715074929705
+    second: tileset-forest_115
+  - first:
+      213: -3291201626718357725
+    second: tileset-forest_116
+  - first:
+      213: -2794670230997866272
+    second: tileset-forest_117
+  - first:
+      213: -152301187392471832
+    second: tileset-forest_118
+  - first:
+      213: 7400452101888908417
+    second: tileset-forest_119
+  - first:
+      213: -7727514967158542389
+    second: tileset-forest_120
+  - first:
+      213: 30698164691640411
+    second: tileset-forest_121
+  - first:
+      213: -5862340214956989015
+    second: tileset-forest_122
+  - first:
+      213: -617848589195034356
+    second: tileset-forest_123
+  - first:
+      213: 3318835806037080130
+    second: tileset-forest_124
+  - first:
+      213: 1955069220715410960
+    second: tileset-forest_125
+  - first:
+      213: -5821523903515279346
+    second: tileset-forest_126
+  - first:
+      213: 7515725690161159364
+    second: tileset-forest_127
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tileset-forest_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 833
+        width: 192
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e987f113e8bb69380800000000000000
+      internalID: -8964771788850497378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 320
+        width: 186
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447b11b6b3b5cb290800000000000000
+      internalID: -7873317737792948412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 478
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa741e0534c26140800000000000000
+      internalID: 4711543892331494133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_3
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 478
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bd5b7c11acaba30800000000000000
+      internalID: 4231916977581841243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_4
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 478
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81619aaa23e43c390800000000000000
+      internalID: -7799304150157027816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_5
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 478
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5275d67147c84630800000000000000
+      internalID: 3911595360351777375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_6
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 384
+        width: 185
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef73074dd8a49e70800000000000000
+      internalID: 9121100813664747495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 478
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067cb89bbd9d7b110800000000000000
+      internalID: 1276728557116835680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_8
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 384
+        width: 100
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb38389a1ad2bb30800000000000000
+      internalID: 4301740401850072043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_9
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 465
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d674b3e65976bd010800000000000000
+      internalID: 1214678416003647341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_10
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 465
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb83a0fef01543640800000000000000
+      internalID: 5058757410320693435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_11
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 465
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffe3aacb59e42f40800000000000000
+      internalID: 5702939608608927739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 256
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6ecb0d9f83f7fb0800000000000000
+      internalID: -4647933644823009573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 256
+        width: 110
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414713ea1a98e7250800000000000000
+      internalID: 5944339885680849940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 312
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f1086fb44652db0800000000000000
+      internalID: -4817333948981960952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852fc345b80a5c430800000000000000
+      internalID: 3802621980658430552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 128
+        width: 127
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b3796c665a4d640800000000000000
+      internalID: 5103886138554661668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 128
+        width: 124
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5c3a70ade0a6d30800000000000000
+      internalID: 4425365913438766573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 149
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0c694b0625a3920800000000000000
+      internalID: 2970777479504380106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_19
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 64
+        width: 179
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bbdd0b7bca12980800000000000000
+      internalID: -8565375111335658677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_20
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 124
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e727ddc96dbad28f0800000000000000
+      internalID: -563605440108334466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 830
+        width: 128
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea58e4bfc56be1d0800000000000000
+      internalID: -3320448357487846679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_22
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 977
+        width: 190
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a366bdaf9cb29b50800000000000000
+      internalID: 6598543798051431335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 911
+        width: 192
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f1e239859d56cd0800000000000000
+      internalID: -2565405438268006531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_24
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 830
+        width: 190
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa8518e40872f2b0800000000000000
+      internalID: -5552243428125472014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 765
+        width: 256
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59d1c910e4e2cb80800000000000000
+      internalID: -8375880705799759525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 704
+        width: 256
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8790a718075cdd0800000000000000
+      internalID: -2466441519514945320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 256
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c91ed058e27cc00800000000000000
+      internalID: 920755797818973229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_28
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 524
+        width: 175
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9748e61881cd1930800000000000000
+      internalID: 4115658424730535836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_29
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 514
+        width: 124
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1b5d80d65b4ed70800000000000000
+      internalID: 9071575029335306704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_30
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 577
+        width: 63
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2123ea43e6e5cf0800000000000000
+      internalID: -261650555801038089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_31
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 650
+        width: 61
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d6e2adb72e2f600800000000000000
+      internalID: 500711530160876832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-forest_32
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 576
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfb9fb90c9874070800000000000000
+      internalID: 8090586715937947599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{A4C865BC-6C1A-A65C-B9D6-5D9A57488AE2}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelBuilder.cs">
+    <Files>
+      <File FileName="Assets/Scripts/LevelBuilder.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0339e510-9ee0-44bc-b62a-8ba70750171c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
