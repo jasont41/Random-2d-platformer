@@ -13,10 +13,12 @@ public class LevelBuilder : MonoBehaviour
     public int[] heightArray;
     public bool choiceMade; //true == something other than a general block 2 y=0 happens 
     Vector2Int gapChance = new Vector2Int(0, 10);
+    Vector2Int continueHigherChance = new Vector2Int(0, 4);
 
 
-    //gap control below
-    private bool LastTileWasGap; //if true last tile was a gap or double gap so the next tile cannot be a gap 
+    // bool controls below 
+    private bool LastTileWasGap; //if true last tile was a gap or double gap so the next tile cannot be a gap
+    private bool LastWasHigher; 
 
     private float incrementingVariable; 
     // Start is called before the first frame update
@@ -42,22 +44,37 @@ public class LevelBuilder : MonoBehaviour
     }
     private void Chances()
     {
-        choiceMade = false; 
+        choiceMade = false;
         int tempRand = Random.Range(1, 6); 
         if(tempRand == firstRandomSeed)
         {
-            LastTileWasGap = false; 
-            heightArray[currentTile] = 1;
-            float tempY = heightArray[currentTile] * spacingMultiple;
-            float tempX = currentTile * spacingMultiple;
-            Instantiate(GeneralTilePrefab, new Vector3(tempX, tempY, 0), Quaternion.identity);
-            fillBottomTiles(heightArray[currentTile],tempX);
-            choiceMade = true; 
+            LastTileWasGap = false;
+            if (!LastWasHigher)
+            {
+                heightArray[currentTile] = 1;
+                float tempY = heightArray[currentTile] * spacingMultiple;
+                float tempX = currentTile * spacingMultiple;
+                Instantiate(GeneralTilePrefab, new Vector3(tempX, tempY, 0), Quaternion.identity);
+                fillBottomTiles(heightArray[currentTile], tempX);
+                choiceMade = true;
+                LastWasHigher = true;
+                currentTile++; 
+            }
         }
+        tempRand = Random.Range(continueHigherChance.x,continueHigherChance.y);
+        if (tempRand == 1 && LastWasHigher == true) // 50% chance that the area continues to get taller, may need to decrease this chance 
+        {
+            ContinueHigher();
+            choiceMade = true;
+            LastWasHigher = true;
+            currentTile++;
+        }
+        
         tempRand = Random.Range(gapChance.x, gapChance.y);
         if (tempRand == 9 && !LastTileWasGap)
             //This will run a 10% chance of no tile at all, and a further 50% chance of a two tile gap
         {
+            LastWasHigher = false; 
             choiceMade = true;
             tempRand = Random.Range(0, 2);
             if(tempRand == 1)
@@ -67,6 +84,7 @@ public class LevelBuilder : MonoBehaviour
         }
         else if (choiceMade == false)
         {
+            LastWasHigher = false; 
             LastTileWasGap = false; 
             float tempX = currentTile * spacingMultiple;
             Instantiate(GeneralTilePrefab, new Vector3(tempX, 0, 0), Quaternion.identity);
@@ -76,6 +94,14 @@ public class LevelBuilder : MonoBehaviour
         CalculatingHeights(); 
     }
 
+    private void ContinueHigher()
+    {
+        heightArray[currentTile] = heightArray[currentTile - 1] + 1;
+        float tempY = heightArray[currentTile] * spacingMultiple;
+        float tempX = currentTile * spacingMultiple;
+        Instantiate(GeneralTilePrefab, new Vector3(tempX, tempY, 0), Quaternion.identity);
+        fillBottomTiles(heightArray[currentTile], tempX);
+    }
     private void fillBottomTiles(int val, float posX)
     {
         for(int i = 0; i < val; i++)
