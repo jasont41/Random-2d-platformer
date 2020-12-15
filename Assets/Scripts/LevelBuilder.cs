@@ -10,15 +10,17 @@ public class LevelBuilder : MonoBehaviour
     private float spacingMultiple = 0.18f;
     private int currentTile; 
     private int firstRandomSeed = 5;
+    private int LedgeWithGapHeight; 
     public int[] heightArray;
     public bool choiceMade; //true == something other than a general block 2 y=0 happens 
     Vector2Int gapChance = new Vector2Int(0, 10);
     Vector2Int continueHigherChance = new Vector2Int(0, 4);
-
+    Vector2Int ledgeWithGapBelowChance = new Vector2Int(0, 4); 
 
     // bool controls below 
     private bool LastTileWasGap; //if true last tile was a gap or double gap so the next tile cannot be a gap
-    private bool LastWasHigher; 
+    private bool LastWasHigher;
+    private bool ledgeWithGapFunction; 
 
     private float incrementingVariable; 
     // Start is called before the first frame update
@@ -45,7 +47,7 @@ public class LevelBuilder : MonoBehaviour
     private void Chances()
     {
         choiceMade = false;
-        int tempRand = Random.Range(1, 6); 
+        int tempRand = Random.Range(1, 6);
         if(tempRand == firstRandomSeed)
         {
             LastTileWasGap = false;
@@ -82,6 +84,23 @@ public class LevelBuilder : MonoBehaviour
                 currentTile++; 
             }
         }
+        else if (LastOneOfTwoWasHigher())
+        {
+            //      Will change, just want it to work with the ledge of 3 wide first
+            //      Gap first
+            currentTile++; 
+            for(int i = 0; i < 3; i++)
+            {
+                heightArray[currentTile] = LedgeWithGapHeight;
+                float tempY = heightArray[currentTile] * spacingMultiple;
+                float tempX = currentTile * spacingMultiple;
+                Instantiate(GeneralTilePrefab, new Vector3(tempX, tempY, 0), Quaternion.identity);
+                Instantiate(GeneralTilePrefab, new Vector3(tempX, tempY, 0), Quaternion.identity);
+                currentTile++;
+            }
+            choiceMade = true;
+            LastWasHigher = false; 
+        }
         else if (choiceMade == false)
         {
             LastWasHigher = false; 
@@ -107,6 +126,29 @@ public class LevelBuilder : MonoBehaviour
         for(int i = 0; i < val; i++)
         {
             Instantiate(BelowTop, new Vector3(posX, (spacingMultiple * i),0), Quaternion.identity);
+        }
+    }
+    private bool LastOneOfTwoWasHigher()
+    {
+        LedgeWithGapHeight = 0; // clearing the variable
+        int tempRand = Random.Range(ledgeWithGapBelowChance.x, ledgeWithGapBelowChance.y);
+        if(tempRand != 0) // Fails chance to get a ledge with a gap below so returns 
+        {
+            return false; 
+        }
+        else if(heightArray[currentTile - 1] >= 3)
+        {
+            LedgeWithGapHeight = heightArray[currentTile - 1]; 
+            return true;
+        }
+        else if(heightArray[currentTile - 2] >= 3)
+        {
+            LedgeWithGapHeight = heightArray[currentTile - 2]; 
+            return true; 
+        }
+        else
+        {
+            return false; 
         }
     }
 }
