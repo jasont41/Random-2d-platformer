@@ -8,21 +8,31 @@ public class LevelBuilder : MonoBehaviour
     public GameObject GeneralTilePrefab;
     public GameObject BelowTop;
     private float spacingMultiple = 0.18f;
-    private int currentTile; 
+    private int currentTile;
     private int firstRandomSeed = 5;
-    private int LedgeWithGapHeight; 
+    private int LedgeWithGapHeight;
     public int[] heightArray;
     public bool choiceMade; //true == something other than a general block 2 y=0 happens 
     Vector2Int gapChance = new Vector2Int(0, 10);
     Vector2Int continueHigherChance = new Vector2Int(0, 4);
-    Vector2Int ledgeWithGapBelowChance = new Vector2Int(0, 4); 
+    Vector2Int ledgeWithGapBelowChance = new Vector2Int(0, 4);
+
+    Vector2Int[] originalValues = new Vector2Int[3];
+
 
     // bool controls below 
     private bool LastTileWasGap; //if true last tile was a gap or double gap so the next tile cannot be a gap
     private bool LastWasHigher;
     private bool ledgeWithGapFunction; 
 
-    private float incrementingVariable; 
+    private float incrementingVariable;
+
+    private void Awake()
+    {
+        originalValues[0] = gapChance;
+        originalValues[1] = continueHigherChance;
+        originalValues[2] = ledgeWithGapBelowChance; 
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +50,7 @@ public class LevelBuilder : MonoBehaviour
     private void CalculatingHeights()
     {
          
-        if (currentTile <= heightArray.Length) { 
+        if (currentTile <= heightArray.Length) {
             Chances();
         }   
     }
@@ -150,5 +160,27 @@ public class LevelBuilder : MonoBehaviour
         {
             return false; 
         }
+    }
+    private int SearchHeightArray(int HeightNeeded, int HistoryLength)
+    {
+        for(int index = currentTile; index < currentTile - HistoryLength ; index--)
+        {
+            if(heightArray[index] == HeightNeeded)
+            {
+                return index; 
+            }
+        }
+        return 0; 
+    }
+    private int SearchHeightArray(int HeightNeeded)
+    {
+        for(int index = currentTile; index < currentTile - 10; index--)
+        {
+            if(heightArray[index] == HeightNeeded)
+            {
+                return index; 
+            }
+        }
+        return 0; 
     }
 }
