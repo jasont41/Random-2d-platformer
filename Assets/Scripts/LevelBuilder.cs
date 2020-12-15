@@ -27,6 +27,9 @@ public class LevelBuilder : MonoBehaviour
 
     private float incrementingVariable;
 
+    //      Saving original values so that we can decrease/increase the bounds
+    //      as needed to increase difficultly 
+
     private void Awake()
     {
         originalValues[0] = gapChance;
@@ -42,7 +45,7 @@ public class LevelBuilder : MonoBehaviour
         {
             float temp = currVal * spacingMultiple;
             currentTile++; 
-            Instantiate(GeneralTilePrefab, new Vector3(temp, 0, 0), Quaternion.identity);
+            Instantiate(GeneralTilePrefab, new Vector3(temp, 0, 0), Quaternion.identity); // makes sure first 5 tiles are general tiles 
         }
         CalculatingHeights(); 
 
@@ -50,7 +53,7 @@ public class LevelBuilder : MonoBehaviour
     private void CalculatingHeights()
     {
          
-        if (currentTile <= heightArray.Length) {
+        if (currentTile <= heightArray.Length) { //prevents an infinite recurisve loop 
             Chances();
         }   
     }
@@ -127,6 +130,10 @@ public class LevelBuilder : MonoBehaviour
         CalculatingHeights(); 
     }
 
+    //      Makes a decision if the tiles will continue to get higher
+    //      Need to change to add a chance of it staying the same height
+    //      or reduce height without a sudden drop 
+
     private void ContinueHigher()
     {
         heightArray[currentTile] = heightArray[currentTile - 1] + 1;
@@ -135,6 +142,9 @@ public class LevelBuilder : MonoBehaviour
         Instantiate(GeneralTilePrefab, new Vector3(tempX, tempY, 0), Quaternion.identity);
         fillBottomTiles(heightArray[currentTile], tempX);
     }
+
+    //      To fill in ground tiles below top tiles 
+
     private void fillBottomTiles(int val, float posX)
     {
         for(int i = 0; i < val; i++)
@@ -142,6 +152,9 @@ public class LevelBuilder : MonoBehaviour
             Instantiate(BelowTop, new Vector3(posX, (spacingMultiple * i),0), Quaternion.identity);
         }
     }
+
+    //      To make sure one of the last two tiles is at least 3 tiles high
+
     private bool LastOneOfTwoWasHigher()
     {
         LedgeWithGapHeight = 0; // clearing the variable
@@ -165,6 +178,11 @@ public class LevelBuilder : MonoBehaviour
             return false; 
         }
     }
+
+    //      This is to search the array to see if there is a tile of a certain
+    //      height within N tiles. Will be useful when having a ledge AND
+    //      tiles below to make sure they are access able by the player
+
     private bool SearchHeightArray(int HeightNeeded, int HistoryLength)
     {
         for(int index = currentTile; index < currentTile - HistoryLength ; index--)
@@ -176,6 +194,10 @@ public class LevelBuilder : MonoBehaviour
         }
         return false; 
     }
+    //      Same as above, but more generic. It just tells if you if there is
+    //      a tile of a certain height within 5 tiles. This is to reduce redunancy
+    //      while the above is to make sure certain conditions exist.
+
     private bool SearchHeightArray(int HeightNeeded)
     {
         for(int index = currentTile; index < currentTile - 5; index--)
