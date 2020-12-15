@@ -61,7 +61,11 @@ public class LevelBuilder : MonoBehaviour
         if(tempRand == firstRandomSeed)
         {
             LastTileWasGap = false;
-            if (!LastWasHigher)
+            if (SearchHeightArray(1))
+            {
+                tempRand = Random.Range(0, 3);
+            }
+            if (!LastWasHigher && tempRand != 0)
             {
                 heightArray[currentTile] = 1;
                 float tempY = heightArray[currentTile] * spacingMultiple;
@@ -161,26 +165,26 @@ public class LevelBuilder : MonoBehaviour
             return false; 
         }
     }
-    private int SearchHeightArray(int HeightNeeded, int HistoryLength)
+    private bool SearchHeightArray(int HeightNeeded, int HistoryLength)
     {
         for(int index = currentTile; index < currentTile - HistoryLength ; index--)
         {
             if(heightArray[index] == HeightNeeded)
             {
-                return index; 
+                return true; 
             }
         }
-        return 0; 
+        return false; 
     }
-    private int SearchHeightArray(int HeightNeeded)
+    private bool SearchHeightArray(int HeightNeeded)
     {
-        for(int index = currentTile; index < currentTile - 10; index--)
+        for(int index = currentTile; index < currentTile - 5; index--)
         {
             if(heightArray[index] == HeightNeeded)
             {
-                return index; 
+                return true; 
             }
         }
-        return 0; 
+        return false; 
     }
 }
