@@ -12,12 +12,17 @@ public class LevelBuilder : MonoBehaviour
     private int firstRandomSeed = 5;
     private int LedgeWithGapHeight;
     public int[] heightArray;
-    public bool choiceMade; //true == something other than a general block 2 y=0 happens 
-    Vector2Int gapChance = new Vector2Int(0, 10);
-    Vector2Int continueHigherChance = new Vector2Int(0, 4);
-    Vector2Int ledgeWithGapBelowChance = new Vector2Int(0, 4);
+    public bool choiceMade; //true == something other than a general block 2 y=0 happens
 
-    Vector2Int[] originalValues = new Vector2Int[3];
+    //      Random ranges
+    Vector2Int gapChance = new Vector2Int(0, 10);
+    Vector2Int continueHigherChance = new Vector2Int(0, 2);
+    Vector2Int ledgeWithGapBelowChance = new Vector2Int(0, 2);
+    Vector2Int heightRandomChance = new Vector2Int(0, 5);
+    Vector2Int repeatHeightChance = new Vector2Int(0, 3);
+    Vector2Int twoGapChance = new Vector2Int(0, 2); 
+
+    Vector2Int[] originalValues = new Vector2Int[6];
 
 
     // bool controls below 
@@ -34,7 +39,11 @@ public class LevelBuilder : MonoBehaviour
     {
         originalValues[0] = gapChance;
         originalValues[1] = continueHigherChance;
-        originalValues[2] = ledgeWithGapBelowChance; 
+        originalValues[2] = ledgeWithGapBelowChance;
+        originalValues[3] = heightRandomChance;
+        originalValues[4] = repeatHeightChance;
+        originalValues[5] = twoGapChance; 
+
     }
     // Start is called before the first frame update
     void Start()
@@ -60,13 +69,13 @@ public class LevelBuilder : MonoBehaviour
     private void Chances()
     {
         choiceMade = false;
-        int tempRand = Random.Range(1, 6);
-        if(tempRand == firstRandomSeed)
+        int tempRand = randomNumber(heightRandomChance); 
+        if (randomNumber(heightRandomChance) == 0) 
         {
             LastTileWasGap = false;
             if (SearchHeightArray(1))
             {
-                tempRand = Random.Range(0, 3);
+                tempRand = randomNumber(repeatHeightChance);
             }
             if (!LastWasHigher && tempRand != 0)
             {
@@ -80,22 +89,21 @@ public class LevelBuilder : MonoBehaviour
                 currentTile++; 
             }
         }
-        tempRand = Random.Range(continueHigherChance.x,continueHigherChance.y);
-        if (tempRand == 1 && LastWasHigher == true) // 50% chance that the area continues to get taller, may need to decrease this chance 
+        if (randomNumber(continueHigherChance) == 1 && LastWasHigher == true) // 50% chance that the area continues to get taller, may need to decrease this chance 
         {
             ContinueHigher();
             choiceMade = true;
             LastWasHigher = true;
             currentTile++;
         }
-        
-        tempRand = Random.Range(gapChance.x, gapChance.y);
-        if (tempRand == 9 && !LastTileWasGap)
+
+        tempRand = randomNumber(gapChance); 
+        if (tempRand == 0 && !LastTileWasGap)
             //This will run a 10% chance of no tile at all, and a further 50% chance of a two tile gap
         {
             LastWasHigher = false; 
             choiceMade = true;
-            tempRand = Random.Range(0, 2);
+            tempRand = randomNumber(twoGapChance);
             if(tempRand == 1)
             {
                 currentTile++; 
@@ -208,5 +216,13 @@ public class LevelBuilder : MonoBehaviour
             }
         }
         return false; 
+    }
+
+
+    //      Using this because it will clean up main function, and make it more
+    //      clear what values we are taking the random of 
+    private int randomNumber(Vector2Int val) 
+    {
+        return Random.Range(val.x, val.y); 
     }
 }
