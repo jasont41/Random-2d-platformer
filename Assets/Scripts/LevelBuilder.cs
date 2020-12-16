@@ -21,9 +21,10 @@ public class LevelBuilder : MonoBehaviour
     Vector2Int heightRandomChance = new Vector2Int(0, 5);
     Vector2Int repeatHeightChance = new Vector2Int(0, 3);
     Vector2Int twoGapChance = new Vector2Int(0, 2);
-    Vector2Int stepDownChance = new Vector2Int(0, 2); 
+    Vector2Int stepDownChance = new Vector2Int(0, 2);
+    Vector2Int stepDownCliffChance = new Vector2Int(0, 2); 
 
-    Vector2Int[] originalValues = new Vector2Int[6];
+    Vector2Int[] originalValues = new Vector2Int[8];
 
 
     // bool controls below 
@@ -43,7 +44,9 @@ public class LevelBuilder : MonoBehaviour
         originalValues[2] = ledgeWithGapBelowChance;
         originalValues[3] = heightRandomChance;
         originalValues[4] = repeatHeightChance;
-        originalValues[5] = twoGapChance; 
+        originalValues[5] = twoGapChance;
+        originalValues[6] = stepDownChance;
+        originalValues[7] = stepDownCliffChance; 
 
     }
     // Start is called before the first frame update
@@ -98,13 +101,23 @@ public class LevelBuilder : MonoBehaviour
             LastWasHigher = true;
             currentTile++;
         }
-        if (LastWasHigher)
+        if (LastWasHigher && randomNumber(stepDownChance) == 0) 
         {
             int temp = heightArray[currentTile - 1] - 1;
-            for (int i = 0; i < temp; i++) 
-            {
-                StepDown(i); 
+            if (randomNumber(stepDownCliffChance) == 0){
+                for (int i = 0; i < temp; i++)
+                {
+                    StepDown(i);
+                }
             }
+            else
+            {
+                for (int i = 1; i < temp; i++)
+                {
+                    StepDown(i);
+                }
+            }
+            LastWasHigher = false; 
         }
         tempRand = randomNumber(gapChance); 
         if (tempRand == 0 && !LastTileWasGap)
