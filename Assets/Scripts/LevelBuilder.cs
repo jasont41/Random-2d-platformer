@@ -100,15 +100,11 @@ public class LevelBuilder : MonoBehaviour
         }
         if (LastWasHigher)
         {
-            Debug.Log(29290292);
-            heightArray[currentTile] = heightArray[currentTile - 1] - 1; 
-            Instantiate(GeneralTilePrefab, new Vector3(currentTile * spacingMultiple, heightArray[currentTile] * spacingMultiple, 0), Quaternion.identity);
-            currentTile++; 
-            /*for (int i = heightArray[currentTile]; i > 0; --i)
+            int temp = heightArray[currentTile - 1] - 1;
+            for (int i = 0; i < temp; i++) 
             {
-                currentTile++; 
-                Instantiate(GeneralTilePrefab,new Vector3(currentTile*spacingMultiple, i*spacingMultiple,0),Quaternion.identity); 
-            }*/
+                StepDown(i); 
+            }
         }
         tempRand = randomNumber(gapChance); 
         if (tempRand == 0 && !LastTileWasGap)
@@ -166,12 +162,10 @@ public class LevelBuilder : MonoBehaviour
 
     private void StepDown(int val)
     {
-        currentTile++;
         heightArray[currentTile] = heightArray[currentTile - 1] - 1;
-        float tempX = currentTile * spacingMultiple;
-        float tempY = heightArray[currentTile] * spacingMultiple;
-        Instantiate(GeneralTilePrefab, new Vector3(tempX, tempY, 0), Quaternion.identity);
-        fillBottomTiles(heightArray[currentTile], tempX); 
+        Instantiate(GeneralTilePrefab, new Vector3(currentTile * spacingMultiple, heightArray[currentTile] * spacingMultiple, 0), Quaternion.identity);
+        fillBottomTiles(heightArray[currentTile], currentTile * spacingMultiple); 
+        currentTile++;
     }
 
     //      To fill in ground tiles below top tiles 
