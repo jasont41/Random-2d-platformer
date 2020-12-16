@@ -20,7 +20,8 @@ public class LevelBuilder : MonoBehaviour
     Vector2Int ledgeWithGapBelowChance = new Vector2Int(0, 2);
     Vector2Int heightRandomChance = new Vector2Int(0, 5);
     Vector2Int repeatHeightChance = new Vector2Int(0, 3);
-    Vector2Int twoGapChance = new Vector2Int(0, 2); 
+    Vector2Int twoGapChance = new Vector2Int(0, 2);
+    Vector2Int stepDownChance = new Vector2Int(0, 2); 
 
     Vector2Int[] originalValues = new Vector2Int[6];
 
@@ -89,14 +90,26 @@ public class LevelBuilder : MonoBehaviour
                 currentTile++; 
             }
         }
-        if (randomNumber(continueHigherChance) == 1 && LastWasHigher == true) // 50% chance that the area continues to get taller, may need to decrease this chance 
+        int throwawayNum = randomNumber(continueHigherChance);
+        if (throwawayNum == 1 && LastWasHigher == true) // 50% chance that the area continues to get taller, may need to decrease this chance 
         {
             ContinueHigher();
             choiceMade = true;
             LastWasHigher = true;
             currentTile++;
         }
-
+        if (LastWasHigher)
+        {
+            Debug.Log(29290292);
+            heightArray[currentTile] = heightArray[currentTile - 1] - 1; 
+            Instantiate(GeneralTilePrefab, new Vector3(currentTile * spacingMultiple, heightArray[currentTile] * spacingMultiple, 0), Quaternion.identity);
+            currentTile++; 
+            /*for (int i = heightArray[currentTile]; i > 0; --i)
+            {
+                currentTile++; 
+                Instantiate(GeneralTilePrefab,new Vector3(currentTile*spacingMultiple, i*spacingMultiple,0),Quaternion.identity); 
+            }*/
+        }
         tempRand = randomNumber(gapChance); 
         if (tempRand == 0 && !LastTileWasGap)
             //This will run a 10% chance of no tile at all, and a further 50% chance of a two tile gap
@@ -149,6 +162,16 @@ public class LevelBuilder : MonoBehaviour
         float tempX = currentTile * spacingMultiple;
         Instantiate(GeneralTilePrefab, new Vector3(tempX, tempY, 0), Quaternion.identity);
         fillBottomTiles(heightArray[currentTile], tempX);
+    }
+
+    private void StepDown(int val)
+    {
+        currentTile++;
+        heightArray[currentTile] = heightArray[currentTile - 1] - 1;
+        float tempX = currentTile * spacingMultiple;
+        float tempY = heightArray[currentTile] * spacingMultiple;
+        Instantiate(GeneralTilePrefab, new Vector3(tempX, tempY, 0), Quaternion.identity);
+        fillBottomTiles(heightArray[currentTile], tempX); 
     }
 
     //      To fill in ground tiles below top tiles 
