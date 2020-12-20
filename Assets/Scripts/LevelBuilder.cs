@@ -24,7 +24,7 @@ public class LevelBuilder : MonoBehaviour
     Vector2Int stepDownChance = new Vector2Int(0, 2);
     Vector2Int stepDownCliffChance = new Vector2Int(0, 2); 
 
-    Vector2Int[] originalValues = new Vector2Int[8];
+    Vector2Int[] originalValues = new Vector2Int[9];
 
 
     // bool controls below 
